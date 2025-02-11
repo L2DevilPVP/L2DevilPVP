@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:8000/l2gm/donate/articulo/add/ -->
+<html lang="es-MX"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Agregar articulo | Sitio de administración de Django</title>
+<link rel="stylesheet" type="text/css" href="./admin_articulo_agregar_files/base.css">
+<link rel="stylesheet" type="text/css" href="./admin_articulo_agregar_files/forms.css">
+
+
+<script type="text/javascript" src="./admin_articulo_agregar_files/saved_resource"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/core.js.descarga"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/jquery.js.descarga"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/jquery.init.js.descarga"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/RelatedObjectLookups.js.descarga"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/actions.js.descarga"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/urlify.js.descarga"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/prepopulate.js.descarga"></script>
+<script type="text/javascript" src="./admin_articulo_agregar_files/xregexp.js.descarga"></script>
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+
+<body class=" app-donate model-articulo change-form" data-admin-utc-offset="-18000">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="index.html">L2Server</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Bienvenido,
+                <strong>reynald0</strong>.
+            
+            
+                
+                    <a href="http://127.0.0.1:8000/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="http://127.0.0.1:8000/l2gm/password_change/">Cambiar contraseña</a> /
+                
+                <a href="http://127.0.0.1:8000/l2gm/logout/">Cerrar sesión</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="http://127.0.0.1:8000/l2gm/">Inicio</a>
+› <a href="http://127.0.0.1:8000/l2gm/donate/">Donate</a>
+› <a href="http://127.0.0.1:8000/l2gm/donate/articulo/">Articulos</a>
+› Agregar articulo
+</div>
+
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        <h1>Agregar articulo</h1>
+        <div id="content-main">
+
+
+
+<form enctype="multipart/form-data" action="http://127.0.0.1:8000/l2gm/donate/articulo/add/" method="post" id="articulo_form" novalidate=""><input type="hidden" name="csrfmiddlewaretoken" value="rXMJUXtaMa32xB8GMBrUmUAuwBno2vEQxVkIVfR6m668djrJ3dpfeRucbeTUcBW5">
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-descripcion">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_descripcion">Descripcion:</label>
+                        
+                            <input type="text" name="descripcion" class="vTextField" required="" id="id_descripcion" maxlength="50">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-precio">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_precio">Precio:</label>
+                        
+                            <input type="number" name="precio" step="0.01" id="id_precio" required="">
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-moneda">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_moneda">Moneda:</label>
+                        
+                            <div class="related-widget-wrapper">
+    <select name="moneda" id="id_moneda" required="">
+  <option value="" selected="">---------</option>
+
+  <option value="1">MXN - peso mexicano</option>
+
+  <option value="2">ARS - peso argentino</option>
+
+  <option value="3">USD - dólar estadounidense</option>
+
+  <option value="4">BRL - real brasileño</option>
+
+  <option value="5">EUR - euro</option>
+
+</select>
+    
+        <a class="related-widget-wrapper-link change-related" id="change_id_moneda" data-href-template="/l2gm/donate/moneda/__fk__/change/?_to_field=id&amp;_popup=1" title="Change selected moneda"><img src="./admin_articulo_agregar_files/icon-changelink.svg" alt="Modificar"></a><a class="related-widget-wrapper-link add-related" id="add_id_moneda" href="http://127.0.0.1:8000/l2gm/donate/moneda/add/?_to_field=id&amp;_popup=1" title="Add another moneda"><img src="./admin_articulo_agregar_files/icon-addlink.svg" alt="Agregar"></a>
+    
+</div>
+                        
+                    
+                    
+                </div>
+            
+        </div>
+    
+        <div class="form-row field-enlace">
+            
+            
+                <div>
+                    
+                    
+                        <label class="required" for="id_enlace">Enlace:</label>
+                        
+                            <textarea name="enlace" class="vLargeTextField" cols="40" rows="10" id="id_enlace" required=""></textarea>
+                        
+                    
+                    
+                        <div class="help">Código de Paypal</div>
+                    
+                </div>
+            
+        </div>
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+<input type="submit" value="Guardar" class="default" name="_save">
+
+
+<input type="submit" value="Guardar y agregar otro" name="_addanother">
+<input type="submit" value="Guardar y continuar editando" name="_continue">
+</div>
+
+
+
+    <script type="text/javascript" id="django-admin-form-add-constants" src="./admin_articulo_agregar_files/change_form.js.descarga" data-model-name="articulo">
+    </script>
+
+
+
+
+<script type="text/javascript" id="django-admin-prepopulated-fields-constants" src="./admin_articulo_agregar_files/prepopulate_init.js.descarga" data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+        
+        <br class="clear">
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+
+
+</body></html>
